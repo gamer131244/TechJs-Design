@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compiler</title>
+</head>
+
+<body>
+
+
+
+<script id="main">
+
+var loadtd = localStorage.getItem("td");
+document.body.innerHTML = loadtd;
+
+setTimeout(()=>{
+  var loadts = localStorage.getItem("ts");
+  var ts = document.createElement("script");
+  var script = document.createTextNode(loadts);
+  ts.appendChild(script);
+  document.body.appendChild(ts);
+}, 1000);
+  
+</script>
+
+</body>
+
+</html>
